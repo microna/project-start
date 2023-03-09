@@ -16,18 +16,18 @@ function numCounter(selector, number, time, step) {
     }, allTime)
 }
 
-// ДАННАЯ ФУНКЦИЯ МОЖЕТ БЫТЬ ВЫЗВАННА НЕОГРАНИЧЕННОЕ КОЛИЧЕСВТО РАЗ
+// this function can be used multiple times
 
-// Первый аргумент - селектор, куда будем выводить результат ( с . если класс и с # если id). ПРИМЕР: '.num1' или '#num1'
-// Второй аргумент - конечное значение которое будет показано на странице
-// Третий аргумент - время анмации (миллисекунды)
-// Четвертый аргумен - шаг анимации ( например добавляем по 1 или по 10 или по 100)
+// First argument- selector where will invoke the result
+// Second argument - finish result
+// Third argument - animation
+// Fourth argument - animation step
 
 // Play animation on scroll
-// Проиграть анимацию при скролле
+// Play animation on scroll
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        // Вместо section-3 пишем тот класс секции, при скролле до которой хотим проиграть анимацию
+        // instead of section-3 you can use different class
         if (entry.target.classList.contains('section-3')) {
             numCounter('#num-1', 600, 2000, 10)
         }

@@ -1,4 +1,4 @@
-// Модальное окно
+// Modal
 function bindModal(trigger, modal, close) {
   trigger = document.querySelector(trigger),
     modal = document.querySelector(modal),
@@ -23,7 +23,7 @@ function bindModal(trigger, modal, close) {
   })
 }
 
-// ПЕРВЫЙ аргумент - класс кнопки, при клике на которую будет открываться модальное окно.
-// ВТОРОЙ аргумент - класс самого модального окна.
-// ТРЕТИЙ аргумент - класс кнопки, при клике на которую будет закрываться модальное окно.
+// First argument - btn class which will open window
+// Second argument - modal class 
+// Third argument - btn class which will close window
 bindModal('.modal__btn', '.modal__wrapper', '.modal__close')

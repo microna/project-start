@@ -8,7 +8,7 @@
     }
 }
 
-// Прогресс-бар формы
+//progress bar
 .progress {
     height: 2px;
     position: absolute;
@@ -29,7 +29,7 @@
     }
 }
 
-// Шапка формы с шагами
+// header form
 // .steps__numbers
 .steps__numbers {
     display: flex;
@@ -59,7 +59,7 @@
     }
 }
 
-// Слайды формы
+// slider form
 .form {
     // .form__step
     &__step {
@@ -71,7 +71,7 @@
     }
 }
 
-// Кнопки навигации формы
+// btn form
 // .step__buttons
 .step__buttons {
     display: flex;

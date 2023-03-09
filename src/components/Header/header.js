@@ -25,11 +25,11 @@ function burgerMenu() {
 }
 burgerMenu()
 
-// Вызываем эту функцию, если нам нужно зафиксировать меню при скролле.
+// Invoke this function if you need fix the menu 
 function fixedHeader() {
     const nav = document.querySelector('.header')
 
-    // тут указываем в пикселях, сколько нужно проскроллить что бы наше меню стало фиксированным
+    // here you can indicate on how much you need to scroll befor fixing
     const breakpoint = 1
     if (window.scrollY >= breakpoint) {
         nav.classList.add('fixed')

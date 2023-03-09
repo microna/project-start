@@ -1,6 +1,6 @@
-// Ссылка на плагин:      https://imask.js.org/
-// Подключаем через npm:  https://www.npmjs.com/package/imask
-// Подключаем через CDN:  <script src="https://unpkg.com/imask"></script>
+// Link for plugin:      https://imask.js.org/
+// Include with npm:  https://www.npmjs.com/package/imask
+// Include with CDN:  <script src="https://unpkg.com/imask"></script>
 
 // Init phone mask
 const maskElement = document.querySelector('.phone__input')

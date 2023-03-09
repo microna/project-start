@@ -112,8 +112,7 @@ class Select {
             .forEach((el) => el.classList.remove('selected'))
         this.$el.querySelector(`[data-id="${id}"]`).classList.add('selected')
 
-        // [ENG] If you are using not png just replace down png on type what you need
-        // [RU] Если используете другой формат то просто нужно изменить ниже png на нужный формат
+        //If you are using not png just replace down png on type what you need
         if (this.options.withImg === true) {
             this.$el.querySelector(
                 `.select__img`,
@@ -145,44 +144,36 @@ class Select {
 }
 // Select Init
 const selectLang = new Select('#select', {
-    // [ENG] Placeholder
+    // Placeholder
     placeholder: 'Выберите элемент',
 
-    // [ENG] If you need image set this option to true
-    // [RU] Если нужно изображение то измините параметр false на true
+    // If you need image set this option to true
     withImg: false,
 
-    // [ENG] Required if withImg === true
-    // [ENG] selectedId must be === image
+    // Required if withImg === true
+    // selectedId must be === image
 
-    // [RU] Обязательный параметр если withImg === true
-    // [RU] selectedId должен быть равен полю image
     // selectedId: 'En',
     data: [
         {
-            // [ENG] Option id
+            // Option id
             id: 'En',
-            // [ENG] Image fullname (if yon don't use png type you will need to change method select() path to img)
-            // [RU] Имя изображения (если используется формат не png то нужно в классе Select(выше в коде) -> и методе select() изменить путь к картинке )
+            // Image fullname (if yon don't use png type you will need to change method select() path to img)
             image: 'En.png',
-            // [ENG] Text content
-            // [RU] Отображаемый текст
+            // Text content
             value: 'En',
         },
         {
-            // [ENG] Option id
+            // Option id
             id: 'Es',
-            // [ENG] Image fullname (if yon don't use png type need to change method select() path to img)
-            // [RU] Имя изображения (если используется формат не png то нужно в классе Select(выше в коде) -> и методе select() изменить путь к картинке )
+            // Image fullname (if yon don't use png type need to change method select() path to img)
             image: 'Es.png',
-            // [ENG] Text content
-            // [RU] Отображаемый текст
+            // Text content
             value: 'Es',
         },
     ],
     onSelect(item) {
-        // [ENG] Form logic after choosing option
-        // [RU] Обработка формы после выбора
+        // Form logic after choosing option
         document.querySelector('.hidden__input').value = item.value
         console.log(item.value)
     },

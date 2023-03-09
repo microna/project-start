@@ -1,4 +1,4 @@
-// Мобильное меню бургер
+// Mobile burger menu
 function burgerMenu() {
     const burger = document.querySelector('.burger')
     const menu = document.querySelector('.menu')
@@ -14,7 +14,7 @@ function burgerMenu() {
             body.classList.remove('locked')
         }
     })
-    // Вот тут мы ставим брейкпоинт навбара
+    // Here is the place where we change breakpoint
     window.addEventListener('resize', () => {
         if (window.innerWidth > 991.98) {
             menu.classList.remove('active')
